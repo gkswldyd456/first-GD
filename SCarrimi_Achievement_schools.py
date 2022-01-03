@@ -271,49 +271,6 @@ time.sleep(1)
 
 
 
-# # 하고싶은 학교만 실행
-
-# pyautogui.alert(text='[중/고 -> 시/도 -> 구/군 -> 학교]을 선택하면 한 학교가 작업됩니다.')
-
-# a = int(pyautogui.prompt(text='중/고' + ' <- 중/고 숫자 쓰세요'))
-# b = int(pyautogui.prompt(text='시/도' + ' <- 시/도 숫자 쓰세요'))
-# c = int(pyautogui.prompt(text='구/군' + ' <- 구/군 숫자 쓰세요'))
-# num = int(pyautogui.prompt(text='학교' + ' <- 학교 숫자 쓰세요'))
-
-# Select_GUGUN(a, b, c)
-# Select_SCHOOL(num)
-
-# driver.switch_to.window(driver.window_handles[1]) #첫번째 탭으로 이동
-# time.sleep(0.2)
-
-# driver.find_element_by_css_selector('#gsYear > option:nth-child(2)').click()
-# driver.find_element_by_css_selector('#gsYearBtn').click()
-# time.sleep(0.2)
-
-# driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-
-# Achievement1()
-
-# try: 
-#     driver.find_element_by_css_selector('#catpcha44 > img').is_enabled()==True # 캡챠그림 있는지 확인하고 있으면 해라
-#     Achievement2()
-#     Achievement3(num)
-#     # driver.execute_script('window.scrollTo(0,0)') # 페이지 맨 위로 가라
-#     time.sleep(1)
-# except NoSuchElementException: # 예외나오면 스크롤 맨위로 올리고 1초기다려(안하니 작업자 생각상 이상)
-#     driver.execute_script('window.scrollTo(0,0)')
-#     time.sleep(1)
-#     pyautogui.alert(text='캡차가 안잡혀서 예외 처리가 되었습니다.')
-#     # input('캡차가 안잡혀서 예외 처리가 되었습니다.')
-    
-# time.sleep(2)
-# pyautogui.alert(text='작업이 끝났습니다.')
-# driver.close()
-
-
-
-
-
 # 학교선택 전까지 한 후 학교선택 및 뒷 작업 반복
 
 pyautogui.alert(text='[중/고 -> 시/도 -> 구/군]을 선택하면 학교 전체가 작업됩니다.')
